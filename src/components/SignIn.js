@@ -85,7 +85,7 @@ export default function SignIn({ setName }) {
               setName(string);
             }}
           >
-            はじめる
+            はじめましょう
           </Button>
         </form>
       </div>
