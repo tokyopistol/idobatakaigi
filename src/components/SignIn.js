@@ -12,11 +12,13 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://twitter.com/takapon_jp"
-      target="_blank"
-      rel="noopener"
+      <Link
+        color="inherit"
+        href="https://twitter.com/diveintohacking"
+        target="_blank"
+        rel="noopener"
       >
-        tokyopistol
+        はむさん
       </Link>
     </Typography>
   );
@@ -45,12 +47,12 @@ const useStyles = makeStyles((theme) => ({
 export default function SignIn({ setName }) {
   const classes = useStyles();
   const [disabled, setDisabled] = useState(true);
-  const [string, setString ] = useState('');
+  const [string, setString] = useState('');
   console.log({ disabled, string });
 
   useEffect(() => {
-    const disabled = string === ''
-    setDisabled(disabled)
+    const disabled = string === '';
+    setDisabled(disabled);
   }, [string]);
 
   return (
@@ -73,12 +75,15 @@ export default function SignIn({ setName }) {
             onChange={(e) => setString(e.target.value)}
           />
           <Button
-            type="submit"
+            type="button"
             fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}
             disabled={disabled}
+            onClick={() => {
+              setName(string);
+            }}
           >
             はじめる
           </Button>
