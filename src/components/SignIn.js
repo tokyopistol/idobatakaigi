@@ -80,7 +80,7 @@ export default function SignIn({ setName }) {
             className={classes.submit}
             disabled={disabled}
           >
-            はじめる
+            はじめるましょう
           </Button>
         </form>
       </div>
