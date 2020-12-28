@@ -70,7 +70,7 @@ export default function SignIn({ setName }) {
             color="primary"
             className={classes.submit}
           >
-            はじめる
+            はじめましょう
           </Button>
         </form>
       </div>
