@@ -37,7 +37,7 @@ const MessageInputField = ({ name }) => {
           <MessageSubmitButton
             inputEl={inputEl}
             name={name}
-             setText={setText}
+            setText={setText}
             text={text}
           />
         </Grid>
