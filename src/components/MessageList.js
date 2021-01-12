@@ -24,7 +24,7 @@ const MessageList = () => {
       .on('value', (snapshot) => {
         const messages = snapshot.val();
         if (messages === null) return;
-        
+
         const entries = Object.entries(messages);
         const newMessages = entries.map((entry) => {
           const [key, nameAndText] = entry;
